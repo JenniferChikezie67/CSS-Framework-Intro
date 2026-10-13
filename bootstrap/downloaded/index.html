@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-6.0.0/css/bootstrap.min.css">
+    <script type="module" src="bootstrap-6.0.0/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <!-- NavBar (Page Menu) -->
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+
+
+    <h1 class="fg-primary bg-danger fs-md">
+        Hello Welcome to Bootstrap Class
+    </h1>
+
+    <div style="font-size: 16px;">
+        <p style="font-size: 2em;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis maxime quasi
+            animi obcaecati alias praesentium ipsam atque laudantium qui ullam!
+        </p>
+
+        <p class="fs-4xl">
+            This is relative to the browser
+        </p>
+    </div>
+
+    <!-- Accordion Example -->
+    <div class="accordion">
+        <details class="accordion-item" name="accordionExample" open>
+            <summary class="accordion-header">
+                Accordion Item #1
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is shown by default because the
+                <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the
+                show/hide logic without any JavaScript. You can put any HTML content within the
+                <code>.accordion-body</code>.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Accordion Item #2
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this
+                with other accordion items. When you open this item, any other open item in the same group will close
+                automatically.
+            </div>
+        </details>
+        <details class="accordion-item" name="accordionExample">
+            <summary class="accordion-header">
+                Accordion Item #3
+                <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2 5 6 6 6-6" />
+                </svg>
+            </summary>
+            <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built
+                into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on
+                your <code>&lt;details&gt;</code> elements.
+            </div>
+        </details>
+    </div>
+
+    <!-- Dialog Example -->
+    <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#exampleDialog">
+        Open dialog
+    </button>
+
+    <dialog class="dialog" id="exampleDialog">
+        <div class="dialog-header">
+            <h1 class="dialog-title">Testing Dialog Box</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+            <p>This is a native dialog element. It uses the browser’s built-in modal behavior for accessibility and
+                focus management.</p>
+        </div>
+        <div class="dialog-footer">
+            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+            <button type="button" class="btn-solid theme-primary">Save changes</button>
+        </div>
+    </dialog>
+
+
+
+</body>
+
+</html>
